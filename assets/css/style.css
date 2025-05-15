@@ -52,6 +52,11 @@ body  {
   justify-content: center;
 }
 
+.contact {
+  background-color: #e2e2e2;
+  justify-content: center;
+}
+
 /* ******************************************************
 *                                                       *
 *               PÁGINA PRINCIPAL (INDEX)                *
@@ -190,6 +195,67 @@ body  {
   height: 100%; /* Llenará el contenedor .lugares */
   object-fit: cover; /* Para que la imagen no se deforme */
   display: block;
+}
+
+/* ******************************************************
+*                                                       *
+*                        CONTACTO                       *
+*                                                       *
+* *******************************************************
+*/
+
+.col-card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+  background-color: #FFF;
+  
+  border: solid 4px rgb(87, 174, 87);
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  width: 500px;
+}
+
+.col-card:hover {
+  border: solid 4px rgb(54, 118, 54);
+  box-shadow: 0 8px 10px rgba(25, 26, 25, 0.1);
+}
+.card {
+  margin-top: 15px;
+  margin-left: 18px;
+}
+
+input {
+  border: solid 3px rgb(38, 25, 221);
+  border-radius: 8px;
+  width: 90%;
+  height: 2.4rem;
+  font-size: 18px;
+}
+
+textarea {
+  border-radius: 8px;
+  width: 90%;
+  border: solid 3px rgb(38, 25, 221);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+  border: solid 3px rgb(221, 25, 25);
+  border-radius: 8px;
+
+  width: 30%;
+  height: 2.4rem;
+}
+
+button:hover {
+  border: solid 3px rgba(221, 25, 25, 0.655);
+  background-color: #e4d4d4;
 }
 
 /* ******************************************************
