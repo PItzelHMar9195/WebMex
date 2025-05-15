@@ -1,0 +1,217 @@
+/*
+*
+* Created May, 13
+* Descripción: Se definen los estilos de cada componente
+*
+ */
+
+/* ******************************************************
+*                                                       *
+*                  BARRA DE NAVEGACION                  *
+*                                                       *
+* *******************************************************
+*/
+nav {
+  /* Estilo de fondo */
+  background-color: transparent;
+
+  /* Estilo de letra y tamaño */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  text-align: center;
+
+  padding: 20px;
+}
+
+nav a{
+  /* Estilo de letra */
+  text-decoration: none;
+  color: #000;
+
+  padding: 30px;
+} 
+
+nav a:hover {
+  /* Al pasar el mouse sobre las opciones del mouse, cambia el fondo de color */
+  background-color: rgba(175, 223, 93, 0.882);
+}
+
+/* ******************************************************
+*                                                       *
+*                  CUERPO DE LA PÁGINA                  *
+*                                                       *
+* *******************************************************
+*/
+
+body  {
+   /*Color de fondo */
+  background-color: rgb(231, 238, 218); 
+
+
+  text-align: center;
+  justify-content: center;
+}
+
+/* ******************************************************
+*                                                       *
+*               PÁGINA PRINCIPAL (INDEX)                *
+*                                                       *
+* *******************************************************
+*/
+
+.principal {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  color: rgb(2, 4, 44);
+}
+
+.secundaria {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+/* ******************************************************
+*                                                       *
+*                 INFORMACION PRINCIPAL                 *
+*                                                       *
+* *******************************************************
+*/
+
+.descripcion {
+  /* Tipo de letra y tamaño */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* ******************************************************
+*                                                       *
+*             FILAS Y COLUMNAS Y CONTENIDO              *
+*                                                       *
+* *******************************************************
+*/
+
+.row {
+  /* Permite poner la imagen y el texto en la misma línea */
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  width: 35%;
+}
+
+.img-row {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.img-row:hover {
+  filter: opacity(.6);
+}
+
+.fr-col {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.fr-col {
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fr-col:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #acbacb84;
+}
+
+.fr-col h2 {
+  font-size: 30px;
+}
+
+.fr-col h4 {
+  margin: 35px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.col-end {
+  width: 25%;
+}
+
+/* ******************************************************
+*                                                       *
+*                     GALERÍA Y EFECTOS                 *
+*                                                       *
+* *******************************************************
+*/
+
+.lugares p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(20px); /* efecto de subida */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+}
+
+.lugares:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lugares {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-gallery {
+  width: 100%;
+  height: 100%; /* Llenará el contenedor .lugares */
+  object-fit: cover; /* Para que la imagen no se deforme */
+  display: block;
+}
+
+/* ******************************************************
+*                                                       *
+*                      ANIMACIONES                      *
+*                                                       *
+* *******************************************************
+*/
+
+h3 {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
